@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your custom CSS here */
+    </style>
+</head>
+
+<body>
+    <section id="about" class="wrapper py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/about.jpg" alt="About Hotel" class="img-fluid" id="about-image">
+                </div>
+                <div class="col-md-6 ps-5 mb-md-0 mb-5">
+                    <h5 class="section-subtitle text-uppercase text-success mb-2">About Us</h5>
+                    <h2 class="section-title fw-bold">Welcome to <span class="text-success">Tourist</span></h2>
+                    <p class="text-muted">
+                        Welcome to Hotel Sea Green, where luxury meets the serene beauty of the ocean. Nestled along the pristine coastline, our hotel offers breathtaking views and unparalleled comfort. Whether you're here for a relaxing getaway or an adventurous vacation, Hotel Sea Green promises an unforgettable experience.
+                    </p>
+                    <p class="text-muted">
+                        Our hotel features elegantly designed rooms, world-class amenities, and top-notch services to cater to all your needs. Indulge in our gourmet dining, rejuvenate at our spa, or take a dip in our infinity pool overlooking the sea. At Hotel Sea Green, we are dedicated to providing you with the finest hospitality and ensuring your stay is as comfortable and memorable as possible.
+                    </p>
+                    
+                    <ul class="features-list list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>First Class Flights</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>5 Star Accommodations</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>150 Premium City Tours</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Handpicked Hotels</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Latest Model Vehicles</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>24/7 Service</li>
+                    </ul>
+                    <a href="#" class="btn btn-success btn-lg">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+        // GSAP animation
+        gsap.from("#about-image", { duration: 1.5, x: -100, opacity: 0, ease: "power2.out" });
+        gsap.from(".section-title", { duration: 1.5, x: 100, opacity: 0, delay: 0.5, ease: "power2.out" });
+        gsap.from(".section-subtitle", { duration: 1.5, y: -50, opacity: 0, delay: 0.5, ease: "power2.out" });
+        gsap.from(".features-list li", { duration: 1, opacity: 0, y: 20, stagger: 0.2, delay: 1 });
+        gsap.from(".btn", { duration: 1, scale: 0.5, opacity: 0, delay: 1.5 });
+    </script>
+</body>
+
+</html>
